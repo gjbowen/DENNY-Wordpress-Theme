@@ -1,0 +1,299 @@
+/*
+Theme Name: DENNY
+Theme URI: denny.ua.edu
+Author: Greg Bowen
+Description: For modifying instructions, go to: https://denny.ua.edu/wp-content/uploads/Instructions.docx
+Version: 3.5
+License: The University of Alabama
+Tags: denny, University of Alabama, Greg Bowen
+*/
+
+/*
+If you're able to view this, congrats. Do not alter this file unless you know what you're doing :)
+
+						`7MM"""Yb. `7MM"""YMM  `7MN.   `7MF'`7MN.   `7MF'`YMM'   `MM'
+						  MM    `Yb. MM    `7    MMN.    M    MMN.    M    VMA   ,V  
+						  MM     `Mb MM   d      M YMb   M    M YMb   M     VMA ,V   
+						  MM      MM MMmmMM      M  `MN. M    M  `MN. M      VMMP    
+						  MM     ,MP MM   Y  ,   M   `MM.M    M   `MM.M       MM     
+						  MM    ,dP' MM     ,M   M     YMM    M     YMM       MM     
+						.JMMmmmdP' .JMMmmmmMMM .JML.    YM  .JML.    YM     .JMML.   
+
+I8,        8        ,8I                                  88  88888888ba                                                 
+`8b       d8b       d8'                                  88  88      "8b                                                
+ "8,     ,8"8,     ,8"                                   88  88      ,8P                                                
+  Y8     8P Y8     8P   ,adPPYba,   8b,dPPYba,   ,adPPYb,88  88aaaaaa8P'  8b,dPPYba,   ,adPPYba,  ,adPPYba,  ,adPPYba,  
+  `8b   d8' `8b   d8'  a8"     "8a  88P'   "Y8  a8"    `Y88  88""""""'    88P'   "Y8  a8P_____88  I8[    ""  I8[    ""  
+   `8a a8'   `8a a8'   8b       d8  88          8b       88  88           88          8PP"""""""   `"Y8ba,    `"Y8ba,   
+    `8a8'     `8a8'    "8a,   ,a8"  88          "8a,   ,d88  88           88          "8b,   ,aa  aa    ]8I  aa    ]8I  
+     `8'       `8'      `"YbbdP"'   88           `"8bbdP"Y8  88           88           `"Ybbd8"'  `"YbbdP"'  `"YbbdP"'  
+    
+
+  ,ad8888ba,                                           88888888ba                                                             
+ d8"'    `"8b                                          88      "8b                                                            
+d8'                                                    88      ,8P                                                            
+88             8b,dPPYba,   ,adPPYba,   ,adPPYb,d8     88aaaaaa8P'   ,adPPYba,   8b      db      d8   ,adPPYba,  8b,dPPYba,   
+88      88888  88P'   "Y8  a8P_____88  a8"    `Y88     88""""""8b,  a8"     "8a  `8b    d88b    d8'  a8P_____88  88P'   `"8a  
+Y8,        88  88          8PP"""""""  8b       88     88      `8b  8b       d8   `8b  d8'`8b  d8'   8PP"""""""  88       88  
+ Y8a.    .a88  88          "8b,   ,aa  "8a,   ,d88     88      a8P  "8a,   ,a8"    `8bd8'  `8bd8'    "8b,   ,aa  88       88  
+  `"Y88888P"   88           `"Ybbd8"'   `"YbbdP"Y8     88888888P"    `"YbbdP"'       YP      YP       `"Ybbd8"'  88       88  
+                                        aa,    ,88                                                                            
+                                         "Y8bbdP" 
+
+
+Sets up fonts*/
+@font-face {
+	font-family: Lato;
+	src: url(fonts/Lato-Medium.ttf); /* TTF file for CSS3 browsers */
+}
+@font-face {
+	font-family: googleSans;
+	src: url(fonts/open-sans.ttf); /* TTF file for CSS3 browsers */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Mobile styles go here */
+    body{
+    	width:150%;
+    }
+    img{max-width:100%;}
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td,hr {
+	margin: 0;
+	padding: 0;
+	font-family: Lato;
+	color: #3c3c3c;
+}
+
+s1 {	/*used for the side title*/
+	padding-left: 12px;
+	padding-bottom: 6px;
+	font-family: Lato;
+	text-emphasis: none;
+	font-size: 1.1vw;
+	color: #3c3c3c;
+}
+h6 {
+	color: #3c3c3c;
+	font-size: 1vw;
+}
+h5 {
+	color: #3c3c3c;
+	font-size: 1vw;
+}
+h4 {
+	color: #3c3c3c;
+	font-size: 1.4vw;
+}
+h3 {
+	color: #3c3c3c;
+	font-size: 1.7vw;
+}
+h2 {
+	color: #3c3c3c;
+	font-size: 2.0vw;
+}
+h1 {
+	color: #3c3c3c;
+	font-size: 2.3vw;
+}
+p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #3c3c3c;
+	font-family: googleSans;
+	font-size: 1.1vw;
+}
+img {
+	width: 100%;
+}
+#content {
+	margin-left: 35%;
+	width: 55%;
+	vertical-align: top;
+	font-family: Lato;
+	font-size: .9vw;
+	min-height: 600px;
+	position: relative;
+	background-size: contain;
+	background-image: url(images/DennyLogo.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.formMod { /* needed for gravity forms  */
+	width: 100%;
+	background-position: top;
+	position: static;
+	float: left;
+}
+/* ~~~~~~~~~~~~~~~~~ main navigation BOX ~~~~~~~~~~~~~~~ */
+.menu {
+	margin-left: 0;
+	margin-right: 10%;
+	min-height: 400%;
+	vertical-align: bottom;
+	padding-left: 35%;/*how far logo is from side*/
+	padding-top: 6%;
+	padding-bottom: 0%;
+	background-image: url(images/dennyTopLeft.png);
+	background-repeat: no-repeat;
+	background-size: 18%; /*defines size of logo*/
+	background-position: 21%; /*how far logo is from side*/
+}
+nav ol { /* for the overall list on nav bar */
+	list-style: none; /* this removes the list marker */
+	font-family: Lato;
+	white-space: nowrap;
+	border-bottom: solid #3c3c3c 2px;
+	width: 100%;
+	vertical-align: text-bottom;
+}
+/*---------------- Menu Format -----------------*/
+/*--Top Level --*/
+.menu a {  /*  entrys  on the top bar */
+	text-decoration: none;
+	font-size: 1vw;
+	color: #3c3c3c;
+}
+.menu a:hover {  /* entrys  on the top bar hovered */
+	text-decoration: none;
+	font-size: 1vw;
+	background-color: #3c3c3c;
+	color: white;
+	position: relative;
+	margin: 0 -3%;
+	padding:0 3%;
+}
+.menu > ol > li { /* for each item entry listed*/
+	display: inline-block;
+	position: relative;
+	padding-right: 30px;
+}
+
+.arrow { /*arrow on the main nav bar*/
+	font-size: .7vw;
+}
+/*-- Bottom Level --*/
+.menu li:hover .sub-menu {
+	opacity: 1;
+	z-index: 1;
+	color: white;
+	position: absolute;
+
+}
+/* overall sub-menu box */
+.sub-menu { 
+	padding-left: 10%;
+	padding-right: 25%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+	box-shadow: 0px 3px 4px rgba(0,0,0,2);
+	background-color: white;
+	list-style: none;
+}
+/* when sub menu entry is hovered */
+.sub-menu li a:hover, .sub-menu .current-item a { 
+	opacity: 1;
+	z-index: 2;
+	font-family: Lato;
+	text-decoration: none;
+	color: white;
+	background-color: #3c3c3c;
+	transition-delay: 0s; /* react immediately on hover */
+}
+/*---------------HEADER-----------------------------------------------*/
+#header {
+	background-color: #3c3c3c;
+	padding: 1.5%;
+	background-image: url(images/OfficLogo-UniversityAdvancement_reversed.png);
+	background-repeat: no-repeat;
+	background-size: 15%;
+	background-position: 18%;
+	padding-left: 15%;
+	text-align: right;
+}
+/*---------------SIDE BAR-----------------------------------------------*/
+#sidebar {
+	margin-left: 15%;
+	width: 17%;
+	float: left;
+	background-color: #eeeded;
+	font-size: 1.2vw;
+	white-space: nowrap;
+	padding-bottom: 0%;
+	margin-bottom: 1%;
+}
+hr.sideStyle {
+	margin-left:3%;
+	width: 90%;
+	margin-top:2%;
+    border: none;
+    border-top:0.15vw solid #a51e36;
+    margin-bottom: 1%;
+    color: #a51e36;
+    padding-top: 0;
+    text-align: center;
+    position: relative;
+	overflow:visible; /*fixes for IE*/
+
+}
+/* for the links listed */
+.side_style:link {    	
+	padding-left: 4%;
+	margin-left: 4%;
+	padding-right: 5%;
+	font-size: 1vw;
+	font-family: Lato;
+	text-decoration: none;
+	color: #3c3c3c;
+	z-index: 10;
+}
+.side_style:hover {
+	z-index: 10;
+	padding-left: 2%;
+	margin-left: 7%;
+	padding-right: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 1vw;
+	font-family: Lato;
+	text-decoration: none;
+	color: white;
+	background-color: #3c3c3c;
+}
+/*---------------FOOTERS-----------------------------------------------*/
+#footer1 { /*	Top Bar	*/
+	clear: both;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 1%;
+	z-index: -10;
+	color: white;
+	font-size: .7vw;
+	font-family: Lato;
+	background-color: #3c3c3c;
+	background-image: url(images/LowerRightUA.png);
+	background-position: 85%;
+	background-repeat: no-repeat;
+	position: inherit;
+	background-size: 12%;
+}
+#footer2 { /*	bottom crimson bar	*/
+	clear: both;
+	padding: .5%;
+	background-color: #a51e36;
+	color: white;
+	text-align: left;
+	padding-left: 15%;
+	font-size: .7vw;
+	bottom: 0px;
+}
